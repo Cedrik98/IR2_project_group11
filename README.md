@@ -148,4 +148,17 @@ We also acknowledge the following opens-source repos, which were instrumental fo
 - [Tevatron](https://github.com/texttron/tevatron) for retrieval framework
 - [RankLLM](https://github.com/castorini/rank_llm/) for LLM reranking inference backbone.
 
+## Snellius 
+### Datasets
+```
+wget https://github.com/git-lfs/git-lfs/releases/download/v3.3.0/git-lfs-linux-amd64-v3.3.0.tar.gz
+tar -xvzf git-lfs-linux-amd64-v3.3.0.tar.gz
+mkdir -p ~/bin
+mv git-lfs-3.3.0/git-lfs ~/bin/
+echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+git lfs version
+git lfs install
+git clone https://huggingface.co/datasets/rryisthebest/Contreiever_BEIR_Embeddings
+```
 
