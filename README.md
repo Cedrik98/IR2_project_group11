@@ -151,6 +151,8 @@ We also acknowledge the following opens-source repos, which were instrumental fo
 ## Snellius 
 ### Datasets
 ```
+module load 2023 #not sure if necassery
+module load git/2.41.0-GCCcore-12.3.0-nodocs #not sure if necassery
 wget https://github.com/git-lfs/git-lfs/releases/download/v3.3.0/git-lfs-linux-amd64-v3.3.0.tar.gz
 tar -xvzf git-lfs-linux-amd64-v3.3.0.tar.gz
 mkdir -p ~/bin
