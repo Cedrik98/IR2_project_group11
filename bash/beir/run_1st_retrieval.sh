@@ -9,8 +9,8 @@ fi
 input_dir="HOME/IR2_project_group11"
 
 # Create necessary directories
-output_dir="${REPO_DIR}/outputs/beir"
-data_dir="${REPO_DIR}/datasets/beir"
+output_dir="outputs/beir"
+data_dir="datasets/beir"
 
 mkdir -p "$output_dir" "$data_dir"
 
