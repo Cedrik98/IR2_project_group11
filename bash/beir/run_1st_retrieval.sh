@@ -6,7 +6,7 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-input_dir="$1"
+input_dir="HOME/IR2_project_group11"
 
 # Create necessary directories
 output_dir="${REPO_DIR}/outputs/beir"
