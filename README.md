@@ -163,4 +163,16 @@ git lfs version
 git lfs install
 git clone https://huggingface.co/datasets/rryisthebest/Contreiever_BEIR_Embeddings
 ```
+### FIRST model
+module load 2023
+module load git/2.41.0-GCCcore-12.3.0-nodocs
 
+source ~/.bashrc
+git lfs version
+git lfs install
+git clone https://huggingface.co/rryisthebest/First_Model /scratch-shared/scur2846/First_Model
+
+### run_rerank_llm.sh
+DATA_DIR="${REPO_DIR}/datasets/beir/"
+OUTPUT_DIR="${REPO_DIR}/outputs/beir/"
+MODEL_IN_USE="/scratch-shared/scur2846/First_Model"
