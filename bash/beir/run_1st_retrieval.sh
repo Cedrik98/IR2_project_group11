@@ -15,7 +15,7 @@ data_dir="datasets/beir"
 mkdir -p "$output_dir" "$data_dir"
 
 # Datasets to process
-datasets=('trec-covid') # 'climate-fever' 'dbpedia-entity' 'fever' 'fiqa' 'hotpotqa' 'msmarco'  'nfcorpus' 'nq' 'scidocs' 'scifact'
+datasets=('trec-covid' 'climate-fever' 'dbpedia-entity' 'fever' 'fiqa' 'hotpotqa' 'msmarco'  'nfcorpus' 'nq' 'scidocs' 'scifact') 
 
 # Iterate over datasets
 for dataset in "${datasets[@]}"; do
@@ -24,7 +24,7 @@ for dataset in "${datasets[@]}"; do
     dataset_output_dir="${output_dir}/${dataset}"
     mkdir -p "$dataset_output_dir"
 
-    python -m tevatron.src.tevatron.faiss_retriever \
+    python -m tevatron.faiss_retriever \
         --query_reps "${input_dir}/${dataset}/original_query/qry.pt" \
         --passage_reps "${input_dir}/${dataset}/original_corpus/*.pt" \
         --depth 1000 \
