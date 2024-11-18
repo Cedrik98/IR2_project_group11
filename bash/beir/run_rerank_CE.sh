@@ -5,7 +5,7 @@ DATA_DIR="${REPO_DIR}/datasets/beir/"
 OUTPUT_DIR="${REPO_DIR}/outputs/beir/"
 
 # List of datasets to rerank
-DATASETS=('trec-covid') # 'climate-fever' 'fever' 'hotpotqa' 'msmarco' 'nfcorpus' 'nq' 'fiqa' 'scidocs' 'scifact' 'dbpedia-entity'
+DATASETS=('trec-covid' 'scifact' 'scidocs' 'nfcorpus' 'fiqa' ) # 'climate-fever' 'fever' 'hotpotqa' 'msmarco' 'nfcorpus' 'nq' 'fiqa' 'scidocs' 'scifact' 'dbpedia-entity'
 
 # Iterate over datasets and rerank each one
 for DATASET in "${DATASETS[@]}"; do  
