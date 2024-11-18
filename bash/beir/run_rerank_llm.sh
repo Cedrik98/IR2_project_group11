@@ -10,7 +10,7 @@ USE_LOGITS=1  # Whether to use FIRST single token logit decoding
 USE_ALPHA=1   # Whether to use Alphabetic Identifiers
 
 # List of datasets to rerank
-DATASETS=('dbpedia-entity') # 'climate-fever' 'fever' 'hotpotqa' 'msmarco' 'nfcorpus' 'nq' 'fiqa' 'scidocs' 'scifact' 'trec-covid'
+DATASETS=('trec-covid' 'scifact' 'scidocs' 'nfcorpus' 'fiqa') # 'climate-fever' 'fever' 'hotpotqa' 'msmarco' 'nfcorpus' 'nq' 'fiqa' 'scidocs' 'scifact' 'trec-covid'
 
 # Iterate over datasets and rerank each one
 for DATASET in "${DATASETS[@]}"; do
