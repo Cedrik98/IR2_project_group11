@@ -11,3 +11,4 @@ outputs/*
 scripts/latency_test.py
 scripts/logits_reranking_test.py
 temp/*
+ir2_env/*
