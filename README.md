@@ -180,3 +180,7 @@ DATA_DIR="${REPO_DIR}/datasets/beir/"
 OUTPUT_DIR="${REPO_DIR}/outputs/beir/"
 MODEL_IN_USE="/scratch-shared/scur2846/First_Model"
 ```
+### Extension-bm25 and SPLADE for first-retrieval
+```
+retrieval results can be generated with guidance on https://castorini.github.io/pyserini/2cr/beir.html
+```
