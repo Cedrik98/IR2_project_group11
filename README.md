@@ -181,6 +181,16 @@ OUTPUT_DIR="${REPO_DIR}/outputs/beir/"
 MODEL_IN_USE="/scratch-shared/scur2846/First_Model"
 ```
 ### Extension-bm25 and SPLADE for first-retrieval
+retrieval results can be generated with guidance on https://castorini.github.io/pyserini/2cr/beir.html, for instance:
 ```
-retrieval results can be generated with guidance on https://castorini.github.io/pyserini/2cr/beir.html
+To get bm25 first-retrieval for trec-covid dataset:
+
+python -m pyserini.search.lucene \
+  --threads 16 --batch-size 128 \
+  --index beir-v1.0.0-trec-covid.flat \
+  --topics beir-v1.0.0-trec-covid-test \
+  --output run.beir.bm25-flat.trec-covid.txt \
+  --output-format trec \
+  --hits 1000 --bm25 --remove-query
+
 ```
